@@ -1,0 +1,36 @@
+{
+    "name": "graphql-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node server/app.js",
+        "dev": "nodemon server/app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anik-hossain/graphql-project.git"
+    },
+    "keywords": [
+        "nodejs",
+        "graphql"
+    ],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/anik-hossain/graphql-project/issues"
+    },
+    "homepage": "https://github.com/anik-hossain/graphql-project#readme",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "express-graphql": "^0.12.0",
+        "graphql": "^16.5.0",
+        "mongoose": "^6.4.1"
+    },
+    "devDependencies": {
+        "dotenv": "^16.0.1",
+        "nodemon": "^2.0.18"
+    }
+}
