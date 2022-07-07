@@ -7,7 +7,9 @@ const connectDB = async () => {
             `MongoDB Connected: ${conn.connection.host.underline}`.cyan.bold
         );
     } catch (error) {
-        console.log(`MongoDB not Connected`.red.bold.underline);
+        process.env.NODE_ENV == 'development'
+            ? console.log(`MongoDB not Connected`.red.bold.underline, error)
+            : console.log(`MongoDB not Connected`.red.bold.underline);
     }
 };
 
